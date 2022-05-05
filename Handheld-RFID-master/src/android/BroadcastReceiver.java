@@ -32,12 +32,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import com.handheldgroup.serialport.SerialPort;
+import com.handheldgroup.anysend.*;
 
 import android.media.ToneGenerator;
 import android.os.SystemClock;
 import android.telecom.Call;
+import android.content.Intent;
 
-public class anysend extends CordovaPlugin {
+public class BroadcastReceiver extends CordovaPlugin {
 	private BroadcastReceiver receiver = new BroadcastReceiver() {
 	    @Override
 	    public void onReceive(Context context, Intent intent) {
@@ -66,25 +68,12 @@ public class anysend extends CordovaPlugin {
 	registerReceiver(receiver, new IntentFilter("com.handheldgroup.anysend.RESULT"));
 	 
 	// Start the service to make sure it's running
-	Intent intent = new Intent(
-			"com.handheldgroup.anysend.RfidService.START");intent.setPackage("com.handheldgroup.anysend");
-
-	// This extra is optional and let's you set a message to be shown as a toast
-	// after startup.
+	Intent intent = new Intent("com.handheldgroup.anysend.RfidService.START");
+	intent.setPackage("com.handheldgroup.anysend");
+	 
+	// This extra is optional and let's you set a message to be shown as a toast after startup.
 	// If set to a empty ("") string, no toast will be shown.
-	intent.putExtra("startup","Ready to scan tags");
-
+	intent.putExtra("startup", "Ready to scan tags"); 
+	 
 	startService(intent);
-
-	public void enableRfid() {
-		Intent intent = new Intent("com.handheldgroup.anysend.SET_STATE");
-		intent.putExtra("device", true);
-		sendBroadcast(intent);
-	}
-
-	public void disableRfid() {
-		Intent intent = new Intent("com.handheldgroup.anysend.SET_STATE");
-		intent.putExtra("device", false);
-		sendBroadcast(intent);
-	}
 }

@@ -1,7 +1,7 @@
 {
-  "name": "msq_cordova-plugin-rfid",
+  "name": "rfid-anysend-plugin",
   "version": "0.1.0",
-  "description": "Cordova RFID Plugin",
+  "description": "Anysend RFID Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
     "id": "cordova-plugin-rfid",
@@ -12,6 +12,7 @@
   "keywords": [
     "cordova",
     "rfid",
+    "anysend",
     "ecosystem:cordova",
     "cordova-android"
   ],
@@ -19,7 +20,7 @@
     "test": "npm run eslint",
     "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests"
   },
-  "author": "Gunnar Lehker, Tim Kostka",
+  "author": "Gunnar Lehker, Tim Kostka, Vincent Ali",
   "license": "Apache-2.0",
   "engines": {
   },
@@ -34,7 +35,7 @@
   },
   "repository": {
   "type": "git",
-  "url": "https://github.com/missionmobile/Handheld-RFID.git"
+  "url": "https://github.com/vincentali/RFID-Anysend-Plugin.git"
 	}
 
 }
