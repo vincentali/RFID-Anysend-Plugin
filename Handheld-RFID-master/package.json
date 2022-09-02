@@ -4,7 +4,7 @@
   "description": "Anysend RFID Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "cordova-plugin-rfid",
+    "id": "rfid-anysend-plugin",
     "platforms": [
       "android"
     ]
@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "engines": {},
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^8.15.0",
     "eslint-config-semistandard": "^11.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.3.0",

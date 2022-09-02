@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-rfid"
-    version="0.0.1">
+    id="rfid-anysend-plugin"
+    version="0.1.4">
     <name>RFID</name>
     <description>Cordova Device RFID</description>
     <license>Apache 2.0</license>
@@ -20,10 +20,9 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/RFID.java" target-dir="src/de/mindsquare/rfid" />
-        <source-file src="src/android/SearchTagActivity.java" target-dir="src/de/mindsquare/rfid" />
-        <source-file src="src/android/SerialPortActivity.java" target-dir="src/de/mindsquare/rfid" />
+        <source-file src="src/android/BroadcastReceiver.java" target-dir="src/de/mindsquare/rfid" ></source-file>
+        <source-file src="src/android/RFID.java" target-dir="src/de/mindsquare/rfid" ></source-file>
         <!-- <source-file src="src/android/x6-lovdream.jar" target-dir="libs" /> -->
-        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" ></framework>
     </platform>
 </plugin>
