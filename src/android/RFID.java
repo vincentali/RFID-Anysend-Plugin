@@ -16,7 +16,8 @@
        specific language governing permissions and limitations
        under the License.
 */
-package de.mindsquare.rfid;
+
+//package de.mindsquare.rfid;
 
 import java.io.File;
 import java.io.IOException;
