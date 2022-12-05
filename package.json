@@ -1,6 +1,6 @@
 {
   "name": "rfid-anysend-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Anysend RFID Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
