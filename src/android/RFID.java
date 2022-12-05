@@ -38,10 +38,11 @@ import com.handheldgroup.anysend.*;
 import android.media.ToneGenerator;
 import android.os.SystemClock;
 import android.telecom.Call;
-import anysendRFID.BroadcastReceiver;
-import anysendRFID.Context;
-import anysendRFID.IntentFilter;
+import android.content.Context;
+import android.content.IntentFilter;
 import android.content.Intent;
+import android.content.BroadcastReceiver;
+
 
 public class RFID extends CordovaPlugin {
 
