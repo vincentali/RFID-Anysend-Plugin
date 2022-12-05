@@ -1,6 +1,6 @@
 {
   "name": "rfid-anysend-plugin",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Anysend RFID Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
@@ -15,7 +15,7 @@
     "anysend",
     "ecosystem:cordova",
     "cordova-android"
-  ], 
+  ],
   "scripts": {
     "test": "npm run eslint",
     "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests"
