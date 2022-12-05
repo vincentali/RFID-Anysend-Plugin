@@ -32,8 +32,8 @@ import org.apache.cordova.CordovaInterface;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import com.handheldgroup.serialport.SerialPort;
-import com.handheldgroup.anysend.*;
+//import com.handheldgroup.serialport.SerialPort;
+//import com.handheldgroup.anysend.*;
 
 import android.media.ToneGenerator;
 import android.os.SystemClock;
